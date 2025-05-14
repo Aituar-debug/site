@@ -44,3 +44,9 @@ header,nav ul li a{color:#ecf0f1}
   color: #ccc; /* Светло-серый для читаемости на тёмном фоне */
   margin: 0;
 }
+
+
+/* Для экранов меньше 768px (планшеты и телефоны) */
+@media (min-width: 450px) and (max-width: 900px) {
+aside {display: none}
+}
