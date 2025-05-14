@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MooN IT - Сообщество для Айтишников</title>
+  <link rel="stylesheet" href="style/forum.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+</head>
+<body>
+
+
+<!-- ===================== Хедер ===================== -->
+  <header>
+    <div id="logo">
+      <a href = "Main.html"><img src="images/logo1.png" alt="MooN IT Logo"></a>
+    </div>
+    <div id="header-right">
+      <div id="search">
+        <input type="text" placeholder="Поиск...">
+      </div>
+      <div class="auth-buttons">
+        <button type="button">Log In</button>
+      </div>
+    </div>
+  </header> 
+
+
+<!-- ===================== Навигация ===================== -->
+  <nav>
+    <ul>
+      <li><a href="Main.html">В тренде</a></li>
+      <li><a href="Prog_page.html">Программирование</a></li>
+      <li><a href="Design_page.html">Дизайн</a>
+      <li><a href="404.html">Маркетинг</a></li>
+      <li><a href="404.html">Кибербезопасность</a></li>
+      <li><a href="404.html">Гаджеты</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <main>
+      <h1>Обратная связь</h1>
+      <form id="feedbackForm" novalidate>
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" />
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <div id="emailError" class="error"></div>
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <div id="messageError" class="error"></div>
+
+        <button type="submit">Отправить</button>
+        <div id="formSuccess" class="success"></div>
+      </form>
+
+      <!-- Место для демонстрации уязвимого вывода -->
+      <h2>Демонстрация уязвимого вывода (innerHTML)</h2>
+      <div id="submissionDemo"></div>
+
+      <!-- Место для безопасного вывода через textContent -->
+      <h2>Безопасный вывод (textContent + экранирование)</h2>
+      <div id="secureDemo"></div>
+    </main>
+      <script src="js/FS.js"></script>
+  </div>
+
+
+
+
+<!-- ===================== Единый футер ===================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>Ваш аккаунт</h3>
+        <ul>
+          <li><a href="404.html">Войти</a></li>
+          <li><a href="404.html">Регистрация</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="404.html">Правила сайта</a></li>
+          <li><a href="diagrams.html">Статистика сайта</a></li>
+          <li><a href="404.html">Для авторов</a></li>
+          <li><a href="404.html">Для компаний</a></li>
+          <li><a href="404.html">Список обновлений</a></li>
+          <li><a href="12.html">Обратная связь</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="404.html">Корпоративный блог</a></li>
+          <li><a href="404.html">Медийная реклама</a></li>
+          <li><a href="404.html">Партнерские программы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MooN IT. Все права защищены.</p>
+      <p>Email: info@moonit.ru | Телефон: +7 (495) 123-45-67</p>
+    
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

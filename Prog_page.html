@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MooN IT - Сообщество для Айтишников</title>
+  <link id="theme-style" rel="stylesheet" href="css/White_theme.css">
+  <script src="js/TC.js"></script>
+</head>
+<body>
+
+<header>
+  <div id="logo">
+    <a href="Main.html">MoonIT</a>
+  </div>
+  <div id="header-right">
+    <div id="search">
+      <input type="text" placeholder="Поиск...">
+    </div>
+    <div class="auth-buttons">
+      <button type="button">Log In</button>
+    </div>
+  <button onclick="toggleTheme()">С</button>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Main.html">В тренде</a></li>
+    <li><a href="Prog_page.html">Программирование</a></li>
+    <li><a href="Design_page.html">Дизайн</a>
+    <li><a href="404.html">Маркетинг</a></li>
+    <li><a href="404.html">Кибербезопасность</a></li>
+    <li><a href="404.html">Гаджеты</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <main>
+      <section class="discussion-topics">
+        <!-- Карточка 1 -->
+        <div class="topic-card">
+          <div class="topic-header">
+            <span class="post-user">Иван</span>
+            <span class="post-date-time">2025-03-24 10:00</span>
+          </div>
+          <div class="topic-title">
+            <a href="topic1.html">Основы программирования на C++</a>
+          </div>
+          <div class="topic-excerpt">
+            C++ – это мощный язык программирования, используемый для разработки высокопроизводительных приложений, игр, системного программного обеспечения и многого друг...
+          </div>
+          <div class="topic-stats">
+            Просмотры: 150 | Ответы: 20
+          </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="topic-card">
+          <div class="topic-header">
+            <span class="post-user">Мария</span>
+            <span class="post-date-time">2025-03-23 14:30</span>
+          </div>
+          <div class="topic-title">
+            <a href="topic2.html">Новые тренды в AI-разработке</a>
+          </div>
+          <div class="topic-excerpt">
+            Обсуждение современных подходов и технологий в искусственном интеллекте, примеры использования в разных отраслях.
+          </div>
+          <div class="topic-stats">
+            Просмотры: 230 | Ответы: 35
+          </div>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="topic-card">
+          <div class="topic-header">
+            <span class="post-user">Алексей</span>
+            <span class="post-date-time">2025-03-22 09:15</span>
+          </div>
+          <div class="topic-title">
+            <a href="topic3.html">Лучшие практики DevOps</a>
+          </div>
+          <div class="topic-excerpt">
+            Обсуждение методологий и инструментов для эффективной интеграции разработки и эксплуатации в IT-проектах.
+          </div>
+          <div class="topic-stats">
+            Просмотры: 90 | Ответы: 10
+          </div>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="topic-card">
+          <div class="topic-header">
+            <span class="post-user">Виктор</span>
+            <span class="post-date-time">2025-03-21 16:45</span>
+          </div>
+          <div class="topic-title">
+            <a href="topic4.html">Квантовые вычисления - миф или реальность?</a>
+          </div>
+          <div class="topic-excerpt">
+            Дискуссия о перспективах квантовых компьютеров, их возможностях и текущем уровне развития технологий.
+          </div>
+          <div class="topic-stats">
+            Просмотры: 310 | Ответы: 42
+          </div>
+        </div>
+        <!-- Карточка 5 -->
+        <div class="topic-card">
+          <div class="topic-header">
+            <span class="post-user">Светлана</span>
+            <span class="post-date-time">2025-03-20 08:00</span>
+          </div>
+          <div class="topic-title">
+            <a href="topic5.html">Как стать успешным фулстек-разработчиком</a>
+          </div>
+          <div class="topic-excerpt">
+            Советы и рекомендации для тех, кто стремится освоить как фронтенд, так и бэкенд разработку, и начать карьеру в IT.
+          </div>
+          <div class="topic-stats">
+            Просмотры: 120 | Ответы: 15
+          </div>
+        </div>
+      </section>
+    </main>
+
+<aside>
+  <!-- Карточка 1 -->
+  <div class="mini-card">
+    <img src="images/1.jpg" alt="C++" class="mini-card-img">
+    <div class="mini-card-content">
+      <a href="topic1.html" class="mini-card-title">C++: основы</a>
+      <p class="mini-card-text">Быстрый старт в системное программирование.</p>
+    </div>
+  </div>
+  <!-- Карточка 2 -->
+  <div class="mini-card">
+    <img src="images/python-thumbnail.jpg" alt="Python" class="mini-card-img">
+    <div class="mini-card-content">
+      <a href="topic2.html" class="mini-card-title">Python для начинающих</a>
+      <p class="mini-card-text">Учим синтаксис, переменные и функции.</p>
+    </div>
+  </div>
+  <!-- Карточка 3 -->
+  <div class="mini-card">
+    <img src="images/js-thumbnail.jpg" alt="JavaScript" class="mini-card-img">
+    <div class="mini-card-content">
+      <a href="topic3.html" class="mini-card-title">JavaScript в браузере</a>
+      <p class="mini-card-text">Интерактивность и события на сайте.</p>
+    </div>
+  </div>
+  <!-- Карточка 4 -->
+  <div class="mini-card">
+    <img src="images/linux-thumbnail.jpg" alt="Linux" class="mini-card-img">
+    <div class="mini-card-content">
+      <a href="topic4.html" class="mini-card-title">Команды Linux</a>
+      <p class="mini-card-text">Основные команды терминала и их примеры.</p>
+    </div>
+  </div>
+</aside>
+
+  </div>
+  
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>Ваш аккаунт</h3>
+        <ul>
+          <li><a href="404.html">Войти</a></li>
+          <li><a href="404.html">Регистрация</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="404.html">Правила сайта</a></li>
+          <li><a href="404.html">Для авторов</a></li>
+          <li><a href="404.html">Для компаний</a></li>
+          <li><a href="404.html">Список обновлений</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="404.html">Корпоративный блог</a></li>
+          <li><a href="404.html">Медийная реклама</a></li>
+          <li><a href="404.html">Партнерские программы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MooN IT. Все права защищены.</p>
+      <p>Email: info@moonit.ru | Телефон: +7 (495) 123-45-67</p>
+    
+    </div>
+  </footer>
+</body>
+</html>
