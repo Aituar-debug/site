@@ -3,31 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MooNIT</title>
+  <title>MooN IT - Сообщество для Айтишников</title>
+  <link rel="stylesheet" href="../css/forum.css"/>
   <link id="theme-style" rel="stylesheet" href="../css/White_theme.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="../js/TC.js"></script>
-
-<style>
-
-    .charts-container {
-      margin: 50px auto;
-      max-width: 1200px;
-    }
-
-    footer {
-      margin-top: 50px;
-    }
-
-    .charts-title {
-      text-align: center;
-      font-size: 2em;
-      margin-top: 50px;
-    }
-</style>
+  <script src="../js/TC.js" defer></script>
+<!--   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';"> -->
 </head>
-
 <body>
+
 <header>
   <div id="logo">
     <a href="../Main.html">MoonIT</a>
@@ -54,17 +37,37 @@
     </ul>
   </nav>
 
-  <h1 class="charts-title">Посещаемость сайта</h1>
-  <div class="charts-container">
-    <div class="chart-wrapper">
-      <canvas id="doughnutChart"></canvas>
-    </div>
-    <div class="chart-wrapper">
-      <canvas id="radarChart"></canvas>
-    </div>
-  </div>
 
-  <script src="../js/script.js"></script>
+  <div class="container">
+    <main>
+      <h1>Обратная связь</h1>
+      <form id="feedbackForm" novalidate>
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" />
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <div id="emailError" class="error"></div>
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <div id="messageError" class="error"></div>
+
+        <button type="submit">Отправить</button>
+        <div id="formSuccess" class="success"></div>
+      </form>
+
+      <!-- Место для демонстрации уязвимого вывода -->
+      <h2>Демонстрация уязвимого вывода (innerHTML)</h2>
+      <div id="submissionDemo"></div>
+
+      <!-- Место для безопасного вывода через textContent -->
+      <h2>Безопасный вывод (textContent + экранирование)</h2>
+      <div id="secureDemo"></div>
+    </main>
+      <script src="../js/FS.js"></script>
+  </div>
 
 <footer>
     <div class="footer-top">
@@ -101,5 +104,8 @@
     
     </div>
 </footer>
+
+
+
 </body>
 </html>

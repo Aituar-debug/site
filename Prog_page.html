@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MooN IT - Сообщество для Айтишников</title>
+  <title>MooNIT</title>
   <link id="theme-style" rel="stylesheet" href="css/White_theme.css">
   <script src="js/TC.js"></script>
 </head>
+
+
 <body>
 
 <header>
@@ -18,22 +20,22 @@
       <input type="text" placeholder="Поиск...">
     </div>
     <div class="auth-buttons">
-      <button type="button">Log In</button>
+      <button id="register-btn" class="icon-button">Sign up</button>
+      <button onclick="toggleTheme()">🌙</button>
     </div>
-  <button onclick="toggleTheme()">С</button>
   </div>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="Main.html">В тренде</a></li>
-    <li><a href="Prog_page.html">Программирование</a></li>
-    <li><a href="Design_page.html">Дизайн</a>
-    <li><a href="404.html">Маркетинг</a></li>
-    <li><a href="404.html">Кибербезопасность</a></li>
-    <li><a href="404.html">Гаджеты</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="Main.html">В тренде</a></li>
+      <li><a href="Prog_page.html">Программирование</a></li>
+      <li><a href="Design_page.html">Дизайн</a>
+      <li><a href="pages/404.html">Маркетинг</a></li>
+      <li><a href="pages/404.html">Кибербезопасность</a></li>
+      <li><a href="pages/404.html">Гаджеты</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
     <main>
@@ -158,30 +160,32 @@
 
   </div>
   
-  <footer>
+<footer>
     <div class="footer-top">
       <div class="footer-column">
         <h3>Ваш аккаунт</h3>
         <ul>
-          <li><a href="404.html">Войти</a></li>
-          <li><a href="404.html">Регистрация</a></li>
+          <li><a href="pages/404.html">Войти</a></li>
+          <li><a href="pages/404.html">Регистрация</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Информация</h3>
         <ul>
-          <li><a href="404.html">Правила сайта</a></li>
-          <li><a href="404.html">Для авторов</a></li>
-          <li><a href="404.html">Для компаний</a></li>
-          <li><a href="404.html">Список обновлений</a></li>
+          <li><a href="pages/404.html">Правила сайта</a></li>
+          <li><a href="pages/diagrams.html">Статистика сайта</a></li>
+          <li><a href="pages/404.html">Для авторов</a></li>
+          <li><a href="pages/404.html">Для компаний</a></li>
+          <li><a href="pages/404.html">Список обновлений</a></li>
+          <li><a href="pages/Feedback.html">Обратная связь</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Услуги</h3>
         <ul>
-          <li><a href="404.html">Корпоративный блог</a></li>
-          <li><a href="404.html">Медийная реклама</a></li>
-          <li><a href="404.html">Партнерские программы</a></li>
+          <li><a href="pages/404.html">Корпоративный блог</a></li>
+          <li><a href="pages/404.html">Медийная реклама</a></li>
+          <li><a href="pages/404.html">Партнерские программы</a></li>
         </ul>
       </div>
     </div>
@@ -190,6 +194,6 @@
       <p>Email: info@moonit.ru | Телефон: +7 (495) 123-45-67</p>
     
     </div>
-  </footer>
+</footer>
 </body>
 </html>
